@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.ScatterChart?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane id="Pane" fx:id="coursesReport" prefHeight="484.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Courses_Report_Controller">
+    <children>
+          <Text layoutX="221.0" layoutY="30.0" text="Course average GPA ">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="18.0" />
+         </font></Text>
+          <TableView fx:id="coursesTable" layoutX="417.0" layoutY="46.0" prefHeight="207.0" prefWidth="345.0">
+              <columns>
+                  <TableColumn fx:id="courseNameColumn" prefWidth="187.0" text="Course Name" />
+                  <TableColumn fx:id="courseIdColumn" prefWidth="155.0" text="Course ID" />
+                  <!-- Add more columns based on your Courses table structure -->
+              </columns>
+          </TableView>
+          <TableView fx:id="studentsTable" layoutX="55.0" layoutY="278.0" prefHeight="181.0" prefWidth="708.0">
+              <columns>
+                  <TableColumn fx:id="studentIdColumn" prefWidth="113.0" text="Student ID" />
+                  <TableColumn fx:id="studentNameColumn" prefWidth="164.0" text="Student Name" />
+                  <TableColumn fx:id="departmentColumn" prefWidth="248.0" text="Department" />
+                  <TableColumn fx:id="gradeColumn" prefWidth="88.0" text="Grade" />
+            <TableColumn fx:id="NgradeColumn" prefWidth="94.0" text="Mark" />
+                  <!-- Add more columns based on your Student details -->
+              </columns>
+          </TableView>
+      <Text fx:id="averageGPALabel" layoutX="473.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GPA">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="18.0" />
+         </font></Text>
+      <ScatterChart fx:id="Grades_chart" layoutX="14.0" layoutY="46.0" prefHeight="207.0" prefWidth="368.0">
+        <xAxis>
+          <NumberAxis fx:id="Stud_id" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="Numeric_Grade" side="LEFT" />
+        </yAxis>
+      </ScatterChart>
+    </children>
+</Pane>

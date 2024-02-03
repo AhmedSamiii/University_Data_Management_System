@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="464.0" prefWidth="855.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Department_Data_Controller">
+   <center>
+      <Pane prefHeight="464.0" prefWidth="855.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="#35415a" layoutX="216.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DEPARTMENT ID" wrappingWidth="115.13671875">
+               <font>
+                  <Font name="Times New Roman Bold" size="13.0" />
+               </font>
+            </Text>
+            <TextField fx:id="deptname" layoutX="364.0" layoutY="206.0" prefHeight="33.0" prefWidth="275.0" promptText="Enter department name " />
+            <TextField fx:id="dept_id" layoutX="364.0" layoutY="159.0" prefHeight="33.0" prefWidth="275.0" promptText="Enter department id number" />
+            <Text fill="#35415a" layoutX="216.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DEPARTMENT NAME" wrappingWidth="147.13671875">
+               <font>
+                  <Font name="Times New Roman Bold" size="13.0" />
+               </font>
+            </Text>
+            <Button fx:id="de_btn" layoutX="545.0" layoutY="271.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="84.0" style="-fx-background-color: #35415A;" text="Delete" textFill="#f7bc50" />
+            <Button fx:id="up_btn" layoutX="438.0" layoutY="270.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="86.0" style="-fx-background-color: #35415A;" text="Update" textFill="#f7bc50" />
+            <Button fx:id="in_btn" layoutX="342.0" layoutY="271.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="82.0" style="-fx-background-color: #35415A;" text="Insert" textFill="#f7bc50" />
+            <Button fx:id="se_btn" layoutX="222.0" layoutY="271.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="88.0" style="-fx-background-color: #35415A;" text="Select" textFill="#f7bc50" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

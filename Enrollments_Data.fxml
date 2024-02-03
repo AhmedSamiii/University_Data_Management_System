@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="464.0" prefWidth="855.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Enrollment_Data_Controller">
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="year" layoutX="342.0" layoutY="228.0" prefHeight="25.0" prefWidth="280.0" promptText="Enter year of enrollment" />
+            <Text fill="#35415a" layoutX="191.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STUDENT ID" wrappingWidth="101.13671875">
+               <font>
+                  <Font name="Times New Roman Bold" size="13.0" />
+               </font>
+            </Text>
+            <TextField fx:id="grade" layoutX="340.0" layoutY="296.0" prefHeight="21.0" prefWidth="103.0" promptText="Enter Grade" />
+            <Text fill="#35415a" layoutX="189.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="COURSE ID " wrappingWidth="101.13671875">
+               <font>
+                  <Font name="Times New Roman Bold" size="13.0" />
+               </font>
+            </Text>
+            <TextField fx:id="course_id" layoutX="340.0" layoutY="185.0" prefHeight="10.0" prefWidth="283.0" promptText="Enter course id number" />
+            <TextField fx:id="student_id" layoutX="340.0" layoutY="150.0" prefHeight="22.0" prefWidth="282.0" promptText="Enter student id number" />
+            <Button fx:id="addgrade_btn" layoutX="427.0" layoutY="355.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="121.0" style="-fx-background-color: #35415A;" text="Add/Update Grade" textFill="#f7bc50" />
+            <Button fx:id="delcourse_btn" layoutX="312.0" layoutY="355.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="92.0" style="-fx-background-color: #35415A;" text="Delete Course" textFill="#f7bc50" />
+            <Button fx:id="addcourse_btn" layoutX="199.0" layoutY="355.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="92.0" style="-fx-background-color: #35415A;" text="Add Course" textFill="#f7bc50" />
+            <Button fx:id="caclgpa_btn" layoutX="569.0" layoutY="355.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="100.0" style="-fx-background-color: #35415A;" text="Calculate GPA" textFill="#f7bc50" />
+            <Text fill="#35415a" layoutX="187.0" layoutY="313.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GRADE" wrappingWidth="52.13671875">
+               <font>
+                  <Font name="Times New Roman Bold" size="13.0" />
+               </font>
+            </Text>
+            <Text fx:id="GPA" fill="#35415a" layoutX="509.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GPA" textAlignment="CENTER" wrappingWidth="72.13671875">
+               <font>
+                  <Font name="Times New Roman Bold" size="16.0" />
+               </font>
+            </Text>
+            <Text fill="#35415a" layoutX="274.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total GPA:" textAlignment="CENTER" wrappingWidth="147.13671875">
+               <font>
+                  <Font name="Times New Roman Bold" size="16.0" />
+               </font>
+            </Text>
+            <Text fill="#35415a" layoutX="191.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="YEAR" wrappingWidth="45.13671875">
+               <font>
+                  <Font name="Times New Roman Bold" size="13.0" />
+               </font>
+            </Text>
+            <TextField fx:id="semester" layoutX="341.0" layoutY="264.0" prefHeight="25.0" prefWidth="280.0" promptText="Enter semester of enrollment" />
+            <Text fill="#35415a" layoutX="189.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SEMESTER" wrappingWidth="94.13671875">
+               <font>
+                  <Font name="Times New Roman Bold" size="13.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>
